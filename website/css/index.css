@@ -134,10 +134,29 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body {
-  background: green;
+header {
+  background-image: url(/images/books-logo.png);
+  background-repeat: no-repeat;
+  background-position: 1.5rem;
+  background-size: 110px;
 }
-h1 {
-  font-family: ;
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 45px 150px;
 }
-/*# sourceMappingURL=index.css.map */
+.menu li {
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+#bookworm {
+  background-color: #196af8;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+#ult {
+  color: orange;
+  font-weight: 700;
+}
