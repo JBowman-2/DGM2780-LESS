@@ -147,10 +147,17 @@ header {
 }
 .menu li {
   margin: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+.menu li a:hover {
+  color: red;
 }
 #bookworm {
-  background-color: #196af8;
+  background-color: #04378f;
   text-align: center;
   color: white;
   padding: 1rem;
@@ -159,4 +166,149 @@ header {
 #ult {
   color: orange;
   font-weight: 700;
+}
+#top {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+#break {
+  font-size: 2.5rem;
+  text-align: center;
+  color: red;
+  padding: 1rem;
+}
+#breakText {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0 2%;
+}
+figure {
+  margin: 2%;
+  position: relative;
+}
+figure img {
+  max-width: 100%;
+}
+#vin {
+  position: absolute;
+  text-align: center;
+  top: 175px;
+  color: white;
+  width: 100%;
+  font-size: 6.5rem;
+}
+#fourSpot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
+  margin: 1.5%;
+}
+.cat {
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  color: white;
+  width: 100%;
+  font-size: 1.8rem;
+}
+#full {
+  margin: 0;
+}
+.beach {
+  position: absolute;
+  text-align: center;
+  top: 125px;
+  color: black;
+  width: 100%;
+  font-size: 4rem;
+}
+#lower {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+#mist {
+  position: absolute;
+  text-align: center;
+  top: 125px;
+  color: black;
+  width: 100%;
+  font-size: 4rem;
+}
+#free {
+  margin: 2%;
+  font-size: 1.8rem;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  padding: 20px 0px;
+  color: black;
+}
+#fan {
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  color: white;
+  width: 100%;
+  font-size: 4rem;
+}
+#threeSpot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  margin: 1.5%;
+}
+#woods {
+  position: absolute;
+  text-align: center;
+  top: 125px;
+  color: white;
+  width: 100%;
+  font-size: 4rem;
+}
+a:hover {
+  color: red;
+}
+#ship {
+  background-color: #04378f;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  font-size: 2.5rem;
+  margin: 0;
+}
+#footWrap {
+  background-color: #6399f7;
+  margin: 0;
+  padding: 0;
+}
+#foot {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+#bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
+  margin: 1.5%;
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+}
+#botLogo img {
+  max-width: 115px;
+}
+#bottom div li {
+  margin: 5px;
+}
+.footLink {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+#mail {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+#mail a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
 }
