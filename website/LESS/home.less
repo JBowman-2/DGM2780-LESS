@@ -36,6 +36,14 @@
     padding: 1rem;
 }
 
+#breakIt {
+    font-size: 2.5rem;
+    text-align: center;
+    color: @hoverColor;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
 #breakText {
     font-size: 1.3rem;
     text-align: center;
@@ -224,6 +232,14 @@ figure img {
 }
 
 
+.aboutHead {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
 
 /* --- 3 Box Grid --- */
 
@@ -241,11 +257,50 @@ figure img {
         }
 }
 
+
+#aboutThree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    margin: 1.5%;
+
+    @media @mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
+
 .big a {
     .clickColor();
     .clickBigFont();
 }
 
+.big a:hover {
+    color: black;
+}
+
+.bigCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.bigCenter a {
+    .clickColor();
+    .click();
+   text-align: center;    
+}
+
+.bigCenter a:hover {
+    color: black;
+
+}
+
+#bottomLogo {
+    margin: 50px 0 25px 0;
+    display: flex;
+    justify-content: center;
+  
+}
 
 
 
