@@ -1,6 +1,9 @@
 
+
+/* --- Top Banner --- */
+
 #bookworm {
-    background-color: #04378f;
+    background-color: @mainColor;
     text-align: center;
     color: white;
     padding: 1rem;
@@ -8,15 +11,20 @@
 }
 
 #ult{
-    color: orange;
+    color: @highOrange;
     font-weight: 700;
 }
 
 
 
-
+/* --- Top Image --- */
 
 #top {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+#aboutTop {
     max-width: 70rem;
     margin: 0 auto;
 }
@@ -24,18 +32,18 @@
 #break {
     font-size: 2.5rem;
     text-align: center;
-    color: red;
+    color: @hoverColor;
     padding: 1rem;
 }
 
 #breakText {
     font-size: 1.3rem;
     text-align: center;
-    margin: 0 2%;
+    margin: 0 @gutter;
 }
 
 figure {
-    margin: 2%;
+    margin: @gutter;
     position: relative;
 }
 
@@ -50,9 +58,25 @@ figure img {
     color: white;
     width: 100%;
     font-size: 6.5rem;
+
+    @media @tablet {
+        font-size: 3.8rem;
+        top: 75px;
+    }
+
+    @media @mobile {
+        font-size: 2.6rem;
+        top: 75px;
+    }
 }
 
 
+
+
+
+
+
+/* --- 4 box grid --- */
 
 
 #fourSpot {
@@ -60,6 +84,16 @@ figure img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 25px;
     margin: 1.5%;
+
+    @media @tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    @media @mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
 
 .cat {
@@ -69,11 +103,15 @@ figure img {
     color: white;
     width: 100%;
     font-size: 1.8rem;
+
+    @media @mobile {
+        font-size: 1.8rem;
+    }
 }
 
 
 
-
+/* --- Full Page Image --- */
 
 
 #full {
@@ -87,11 +125,21 @@ figure img {
     color: black;
     width: 100%;
     font-size: 4rem;
+
+    @media @tablet {
+        font-size: 2rem;
+        top: 25px;
+    }
+
+    @media @mobile {
+        font-size: 1.5rem;
+        top: 25px;
+    }
 }
 
 
 
-
+/* --- Lower Images --- */
 
 
 
@@ -107,18 +155,34 @@ figure img {
     color: black;
     width: 100%;
     font-size: 4rem;
+
+    @media @tablet {
+        font-size: 2rem;
+        top: 50px;
+    }
+
+    @media @mobile {
+        font-size: 1.5rem;
+        top: 25px;
+    }
 }
 
 
 #free {
-    margin: 2%;
+    margin: @gutter;
     font-size: 1.8rem;
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-top: 2px solid @hoverColor;
+    border-bottom: 2px solid @hoverColor;
     padding: 20px 0px;
     color: black;
-}
+    text-align: center;
 
+    @media @tablet {
+        font-size: 1.3rem;
+        top: 50px;
+    }
+
+}
 
 
 #fan {
@@ -128,18 +192,17 @@ figure img {
     color: white;
     width: 100%;
     font-size: 4rem;
+
+    @media @tablet {
+        font-size: 2rem;
+        top: 50px;
+    }
+
+    @media @mobile {
+        font-size: 1.5rem;
+        top: 25px;
+    }
 }
-
-
-
-#threeSpot {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
-    margin: 1.5%;
-}
-
-
 
 #woods {
     position: absolute;
@@ -148,7 +211,47 @@ figure img {
     color: white;
     width: 100%;
     font-size: 4rem;
+
+    @media @tablet {
+        font-size: 2rem;
+        top: 50px;
+    }
+
+    @media @mobile {
+        font-size: 1.5rem;
+        top: 25px;
+    }
 }
+
+
+
+/* --- 3 Box Grid --- */
+
+
+#threeSpot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    margin: 1.5%;
+
+
+        @media @mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+}
+
+.big a {
+    .clickColor();
+    .clickBigFont();
+}
+
+
+
+
+
+
+
 
 
 

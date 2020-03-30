@@ -134,28 +134,76 @@ html {
 *:after {
   box-sizing: inherit;
 }
+.clickColor {
+  background-color: #c70303;
+  border: 3px white solid;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+}
+.clickBigFont {
+  font-size: 2rem;
+  padding: 25px;
+}
+@media (max-width: 850px) {
+  .clickBigFont {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+.clickSmFont {
+  font-size: 0.9rem;
+  padding: 15px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
 header {
   background-image: url(/images/books-logo.png);
   background-repeat: no-repeat;
   background-position: 1.5rem;
   background-size: 110px;
 }
+@media (max-width: 600px) {
+  header {
+    background-size: 65px;
+  }
+}
 .menu {
   display: flex;
   list-style: none;
   padding: 45px 150px;
 }
+@media (max-width: 600px) {
+  .menu {
+    padding: 35px 100px;
+  }
+}
 .menu li {
   margin: 1.5rem;
   font-size: 2rem;
+}
+@media (max-width: 850px) {
+  .menu li {
+    font-size: 1.2rem;
+    margin: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .menu li {
+    font-size: 1rem;
+    margin: 0.6rem;
+  }
 }
 .menu li a {
   text-decoration: none;
   color: black;
 }
 .menu li a:hover {
-  color: red;
+  color: #c70303;
 }
+/* --- Top Banner --- */
 #bookworm {
   background-color: #04378f;
   text-align: center;
@@ -164,17 +212,22 @@ header {
   font-size: 1.5rem;
 }
 #ult {
-  color: orange;
+  color: #f7aa1c;
   font-weight: 700;
 }
+/* --- Top Image --- */
 #top {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+#aboutTop {
   max-width: 70rem;
   margin: 0 auto;
 }
 #break {
   font-size: 2.5rem;
   text-align: center;
-  color: red;
+  color: #c70303;
   padding: 1rem;
 }
 #breakText {
@@ -197,11 +250,36 @@ figure img {
   width: 100%;
   font-size: 6.5rem;
 }
+@media (max-width: 850px) {
+  #vin {
+    font-size: 3.8rem;
+    top: 75px;
+  }
+}
+@media (max-width: 600px) {
+  #vin {
+    font-size: 2.6rem;
+    top: 75px;
+  }
+}
+/* --- 4 box grid --- */
 #fourSpot {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 25px;
   margin: 1.5%;
+}
+@media (max-width: 850px) {
+  #fourSpot {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 600px) {
+  #fourSpot {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
 .cat {
   position: absolute;
@@ -211,6 +289,12 @@ figure img {
   width: 100%;
   font-size: 1.8rem;
 }
+@media (max-width: 600px) {
+  .cat {
+    font-size: 1.8rem;
+  }
+}
+/* --- Full Page Image --- */
 #full {
   margin: 0;
 }
@@ -222,6 +306,19 @@ figure img {
   width: 100%;
   font-size: 4rem;
 }
+@media (max-width: 850px) {
+  .beach {
+    font-size: 2rem;
+    top: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .beach {
+    font-size: 1.5rem;
+    top: 25px;
+  }
+}
+/* --- Lower Images --- */
 #lower {
   max-width: 70rem;
   margin: 0 auto;
@@ -234,13 +331,32 @@ figure img {
   width: 100%;
   font-size: 4rem;
 }
+@media (max-width: 850px) {
+  #mist {
+    font-size: 2rem;
+    top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  #mist {
+    font-size: 1.5rem;
+    top: 25px;
+  }
+}
 #free {
   margin: 2%;
   font-size: 1.8rem;
-  border-top: 2px solid red;
-  border-bottom: 2px solid red;
+  border-top: 2px solid #c70303;
+  border-bottom: 2px solid #c70303;
   padding: 20px 0px;
   color: black;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  #free {
+    font-size: 1.3rem;
+    top: 50px;
+  }
 }
 #fan {
   position: absolute;
@@ -250,11 +366,17 @@ figure img {
   width: 100%;
   font-size: 4rem;
 }
-#threeSpot {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px;
-  margin: 1.5%;
+@media (max-width: 850px) {
+  #fan {
+    font-size: 2rem;
+    top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  #fan {
+    font-size: 1.5rem;
+    top: 25px;
+  }
 }
 #woods {
   position: absolute;
@@ -264,8 +386,48 @@ figure img {
   width: 100%;
   font-size: 4rem;
 }
+@media (max-width: 850px) {
+  #woods {
+    font-size: 2rem;
+    top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  #woods {
+    font-size: 1.5rem;
+    top: 25px;
+  }
+}
+/* --- 3 Box Grid --- */
+#threeSpot {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 25px;
+  margin: 1.5%;
+}
+@media (max-width: 600px) {
+  #threeSpot {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+.big a {
+  background-color: #c70303;
+  border: 3px white solid;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  padding: 25px;
+}
+@media (max-width: 850px) {
+  .big a {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
 a:hover {
-  color: red;
+  color: #c70303;
 }
 #ship {
   background-color: #04378f;
@@ -292,6 +454,22 @@ a:hover {
   font-size: 1.5rem;
   padding-bottom: 3rem;
 }
+@media (max-width: 850px) {
+  #bottom {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 25px;
+    margin: 5%;
+  }
+}
+@media (max-width: 600px) {
+  #bottom {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 25px;
+    margin: 5%;
+  }
+}
 #botLogo img {
   max-width: 115px;
 }
@@ -311,4 +489,9 @@ a:hover {
   text-decoration: none;
   color: black;
   font-size: 3rem;
+}
+@media (max-width: 600px) {
+  #mail a {
+    font-size: 2rem;
+  }
 }

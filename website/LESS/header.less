@@ -1,20 +1,44 @@
+body {
+    font-family: @mainFont;
+    font-size: 16px;
+}
+
 header {
     background-image: url(/images/books-logo.png);
     background-repeat: no-repeat;
     background-position: 1.5rem;
     background-size: 110px;
+
+    @media @mobile {
+        background-size: 65px;
+    }
 }
 
 
 .menu {
     display: flex;
     list-style: none;
-    padding: 45px 150px;     
+    padding: 45px 150px; 
+
+    @media @mobile {
+        padding: 35px 100px;
+    }
+        
 }
 
 .menu li {
     margin: 1.5rem;
     font-size: 2rem;
+
+    @media @tablet {
+        font-size: 1.2rem;
+        margin: .8rem;
+    }
+
+    @media @mobile {
+        font-size: 1rem;
+        margin: .6rem;
+    }
 }
 
 .menu li a {
@@ -23,5 +47,5 @@ header {
 }
 
 .menu li a:hover {
-    color: red;
+    color: @hoverColor;
 }

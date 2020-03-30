@@ -1,10 +1,12 @@
+
+
 a:hover {
-    color: red;
+    color: @hoverColor;
 }
 
 
 #ship {        
-    background-color: #04378f;
+    background-color: @mainColor;
     text-align: center;
     color: white;
     padding: 1rem;
@@ -15,7 +17,7 @@ a:hover {
 
 
 #footWrap {
-    background-color: #6399f7;
+    background-color: @subBlue;
     margin: 0;
     padding: 0;
 }
@@ -32,6 +34,20 @@ a:hover {
     margin: 1.5%;
     font-size: 1.5rem;
     padding-bottom: 3rem;
+
+    @media @tablet {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 25px;
+        margin: 5%;
+    }
+
+    @media @mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 25px;
+        margin: 5%;
+    }
 }
 
 #botLogo img{
@@ -57,4 +73,8 @@ a:hover {
     text-decoration: none;
     color: black;
     font-size: 3rem;
+
+    @media @mobile {
+        font-size: 2rem;
+    }
 }
